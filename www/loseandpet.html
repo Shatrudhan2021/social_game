@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Store</title>
+  <!-- bootstrap css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Global Site Tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-V1QG4Q0BSX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-V1QG4Q0BSX');
+  </script>
+
+</head>
+
+<body>
+  <div class="">
+    <div class="Section-1 bg-dog-image ">
+      <!-- <img src="Image/Group 370.png" class="dog-image"> -->
+      <nav class="navbar navbar-expand-lg border-0   navbar-light px-2 Section-1">
+        <img class="pt-3" src="Image/Hills_TransformingLives_Logo_CMYK_White TL_2019.png">
+        <button class="button-toogle bg-none pt-5 text-white" data-toggle="collapse"
+          data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent">
+          <span class="navbar-toggler text-white bg-none "><i class="bi bi-list fa-2x "></i></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto text-white">
+            <li class="close">
+              <i class="bi bi-x text-dark fa-3x"></i>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link pb-0 text-decoration-none">
+                <span data-lang="GAMES_RULES" id="menu_game_rules">Game Rules </span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link py-0 text-decoration-none">
+                <span data-lang="PRIVACY_POLICY" id="Privacy">Privacy Policy </span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link py-0 text-decoration-none">
+                <span data-lang="COOKIES_POLICY" id="cookies"> Cookies Policy</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pt-0 text-decoration-none">
+                <span class="text-primary" data-lang="CONTACT" id="contact_menu">Contact </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class=" container Section-2   pt-4 px-4">
+      <h1 class="text-primary text-center m-0   pb-2"> <span data-lang="OH-SORRY"> </span> </h1>
+      <p class="text-center"> <span data-lang="OH-SORRY-PARA"></span></span>
+      </p>
+      <div class="form-group pt-1">
+        <input type="text" style="line-height:1.5!important" class="form-control" name="petName" id="petName" required
+          data-lang="PET_NAME" placeholder="">
+      </div>
+      <div class="row">
+        <label><span data-lang="PET_AGE">Enter Pet's age</span></label>
+          <div class="form-group pt-1" maxlength="2">
+            <input type="date" data-lang="YEAR" style="line-height:1.5!important" class="form-control" name="petYear"
+              id="petYear" required data-lang="PET_Age"  min="1980-05-11" max="2021-10-20" placeholder="">
+          </div>
+        <!-- <div class="col">
+          <div class="form-group pt-1">
+            <input type="number" data-lang="MONTH" style="line-height:1.5!important" class="form-control"
+              name="petMonth" id="petMonth" min="0" max="12" required data-lang="PET_MONTH" placeholder="">
+          </div>
+        </div> -->
+      </div>
+
+
+      <div class="form-check px-0 pt-2">
+
+        <select class="form-select" id="weightOption" aria-label="Default select example" style="width:100%!important">
+          <option value="" data-lang="CHOICE_BABY" selected>Select a choice</option>
+          <option value="Kitty" id="kitten" data-lang="CAT_BABY"></option>
+          <option value="Adult Cat" id="adult" data-lang="Adult">Adult</option>
+          <option value="Puppy" id="puppy" data-lang="DOG_BABY"></option>
+          <option value="Adult dog until 10kg" id="pet_option_10" data-lang="PET_OPTION_10"></option>
+          <option value="Adult dog 10-25 kg" id="pet_option_10_25" data-lang="PET_OPTION_10-25"></option>
+          <option value="Adult dog from 25kg" id="pet_option_25" data-lang="PET_OPTION_25"></option>
+        </select>
+      </div>
+      <br />
+      <div class="Section-3 py-2 text-center">
+        <button type="button" name="sendNewSms" id="sendNewSms" class="btn btn-primary  px-5"><a id="catanddog"
+            class="text-white text-decoration-none"><span data-lang="Next"> </span> </a>
+        </button>
+        <div id="error_msg" style="color: red;"></div>
+      </div>
+    </div>
+    <div class="container cookies_show_hide">
+      <div class="row">
+        <p class="my-0 px-2 py-2 text-primary">
+          <span data-lang="COOKIES_POLICY_WELCOME" id="cookies_below"> </span>
+        </p>
+        <br>
+        <button type="button" class="btn btn-primary w-50 justify-content-center mx-auto  mb-2 border-radius-16"
+          id="cookies_accept">
+          <span class="text-white text-decoration-none" data-lang="ACCEPT">Accept</span></button>
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+  <script type="module">
+    import fetchApi from "./js/services/fetch.js"
+    import lng from "./js/services/language.js"
+    const lgInstance = new lng();
+    const api = new fetchApi();
+    $(document).ready(function () {
+      // $("#sendNewSms").prop('disabled',true);
+      $("#petName").bind("input", function () {
+        localStorage.setItem('animal_name', $("#petName").val());
+      });
+      $("#petYear").bind("input", function () {
+        localStorage.setItem('pet_age', $("#petYear").val());
+      });
+      $("span[data-lang]").each((index, elm) => {
+        const LANG_CODE = $(elm).data('lang');
+        const content = lgInstance.trans(`${LANG_CODE}`);
+        $(elm).text(content);
+      })
+      $("option[data-lang]").each((index, elm) => {
+        const LANG_CODE = $(elm).data('lang');
+        const content = lgInstance.trans(`${LANG_CODE}`);
+        $(elm).text(content);
+      })
+      $("input[data-lang]").each((index, elm) => {
+        const LANG_CODE = $(elm).data('lang');
+        const content = lgInstance.trans(`${LANG_CODE}`);
+        $(elm).attr('placeholder', content);
+      });
+    })
+  
+
+    function validate() {
+      if (document.getElementById("petName").value.length == 0) {
+        $('#error_msg').text("Please enter pet's name");
+        return false;
+      }
+      if (document.getElementById("petYear").value.length == "") {
+        $('#error_msg').text("Please enter pet's age");
+        return false;
+      }
+      var weightSelction = document.getElementById("weightOption");
+      if (weightSelction.value == "") {
+        $('#error_msg').text("Please select weight option");
+        return false;
+      }
+      window.location.href = "lose.html";
+    }
+    $("#catanddog").on("click", async function () {
+      const res = await api.catAndPet()
+      console.log(res)
+      validate();
+    });
+    $("#weightOption").on("change", async function () {
+      var select = document.getElementById('weightOption');
+      var selectValue = $('#weightOption').val();
+      localStorage.setItem("weightValue", selectValue);
+    })
+    $(function(){
+    var dtToday = new Date();
+    var month = dtToday.getMonth() + 1;
+    var day = dtToday.getDate();
+    var year = dtToday.getFullYear();
+
+    if(month < 10)
+        month = '0' + month.toString();
+    if(day < 10)
+        day = '0' + day.toString();
+
+    var maxDate = year + '-' + month + '-' + day;    
+    $('#petYear').attr('max', maxDate);
+
+});
+  </script>
+</body>
+
+</html>

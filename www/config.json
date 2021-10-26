@@ -1,0 +1,43 @@
+{
+  "general":{
+    "useFullscreen":true,
+    "useHelpPanel":true,
+    "useCreditPanel":true,
+    "useBackgroundMusic":true,
+    "cardTextures":["pad1.jpg", "pad1b.jpg", "pad1c.jpg", "pad1d.jpg", "pad1e.jpg", "pad1f.jpg"]
+  },
+  "strings":{
+    "APP_TITLE":"3D Memory Matching",
+    "APP_INFO":"Fun addictive 3D memory game",
+    "NEW_GAME":"SPELEN / JOUER",
+    "HELP_TEXT":"Help text",
+    "SETTING":"SETTING",
+    "CREDIT":"CREDIT",
+    "CREDIT_TEXT":"Music and sound effects from opengameart.org"
+  },
+  "level":[
+    
+    {"category":0, "grid":"5x2"},
+    {"category":1, "grid":"3x4"},
+    {"category":1, "grid":"3x4"},
+    {"category":1, "grid":"4x4"},
+    {"category":1, "grid":"4x4"},
+    {"category":2, "grid":"4x5"},
+    {"category":2, "grid":"4x5"},
+    {"category":3, "grid":"4x6"},
+    {"category":3, "grid":"4x6"},
+    {"category":0, "grid":"5x6"},
+    {"category":0, "grid":"5x6"},
+    {"category":0, "grid":"6x6"},
+    {"category":0, "grid":"6x6"},
+    {"category":1, "grid":"6x7"},
+    {"category":1, "grid":"6x7"}
+  ],
+  "data":{
+    "animals":5,
+    "fish":20,
+    "fruits":20,
+    "birds":20,
+    "vehicle":20
+  }
+}

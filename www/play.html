@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="description" content="3d, photo, gallery, advanced, javascript">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <link rel="stylesheet" href="css/mm3d.prod.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>3D Memory Matching</title>
+  <script src="js/three.min.js"></script>
+  <script src="js/anime.min.js"></script>
+  <script src="js/mm3d.min.js"></script>
+  <!-- Global Site Tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-V1QG4Q0BSX"></script>
+
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-V1QG4Q0BSX');
+  </script>
+
+</head>
+
+<body>
+  <!-- Main -->
+  <div id="wrapper">
+    <!-- Start gallery-->
+    <div class="rs-container">
+      <div class="rs-mm3d">
+
+      </div>
+    </div>
+    <!-- end gallery-->
+  </div>
+  <!-- end main wrapper-->
+  <!-- <footer>Designed and developed by <a href="https://raizensoft.com" target="_blank">Raizensoft.com</a></footer> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    document.body.onload = function () {
+
+      "use strict";
+
+      var el = document.querySelector('.rs-mm3d');
+      var mm3d = new MemoryMatching(el);
+      window.mm3d = mm3d;
+
+    }
+
+  </script>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.js"
+    integrity="sha512-otOZr2EcknK9a5aa3BbMR9XOjYKtxxscwyRHN6zmdXuRfJ5uApkHB7cz1laWk2g8RKLzV9qv/fl3RPwfCuoxHQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script>
+    const callserver = async () => {
+      var getToken = localStorage.getItem("token")
+      var spiltToken = atob(getToken.split('.')[1])
+      userId = JSON.parse(spiltToken).id
+      console.log(userId)
+      localStorage.setItem("UserId", userId)
+    }
+    callserver();
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.js"
+    integrity="sha512-otOZr2EcknK9a5aa3BbMR9XOjYKtxxscwyRHN6zmdXuRfJ5uApkHB7cz1laWk2g8RKLzV9qv/fl3RPwfCuoxHQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script type="module">
+    import lng from "./js/services/language.js"
+
+    const lgInstance = new lng();
+
+    $("span[data-lang]").each((index, elm) => {
+      const LANG_CODE = $(elm).data('lang');
+      const content = lgInstance.trans(`${LANG_CODE}`);
+      $(elm).text(content);
+    })
+  </script>
+
+</body>
+
+</html>

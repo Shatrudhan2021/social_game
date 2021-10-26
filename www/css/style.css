@@ -1,0 +1,426 @@
+/* @media screen and (max-width: 500px) { */
+html, body {
+    margin:0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+    overflow-y: auto
+  }
+
+h1 , h2 , h3 ,h4 ,h5 , h6 , p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: regular;
+}
+
+  .main-section{
+    height: 100vh;
+}
+/* .Section-1{
+    height: 30%;
+} */
+.Section-2 , .welcome-second-section{
+    height: 60%;
+}
+.Section-3{
+    height: 10%;
+}
+.welcome-third-section{
+    position: fixed;
+    bottom: 0px;
+    background-color: #fff !important;
+    opacity: 0.55;
+    
+}
+
+.hr ,hr{
+    border-top: 4px dashed black!important;
+    width: 90%;
+    margin-left: 10px;
+}
+
+/* welcome page css */
+.welcome-bg-image{
+    background-image: url("../Image/Hills-Image-GirlYorkie.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 70%;
+}
+.welcome-bg-image-overlay{
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.welcome-first-section{
+    height: 40%;
+}
+.welcome-second-section{
+    height: 60%;
+}
+.border-radius-16{
+    border-radius:16px;
+}
+
+/* rest page dog image */
+.dog-image{
+    width: 100%;
+    height: auto;
+}
+.form-control{
+    line-height: 1px !important;
+    margin-bottom:  7px !important;
+}
+.ft-13{
+    font-size: 13px;
+}
+.rs-trophy-panel img {
+    padding-top: 0px !important;
+    margin: 101px auto !important;
+}
+.rs-trophy-panel .meta-container span{
+    color: #0055A5;
+}
+.rs-game-overlay{
+    background-color: #0055A5;
+}
+.rs-trophy-panel{
+background-color: white;
+}
+.rs-hscreen-header .app-logo {
+    display: none !important;
+}
+.rs-hscreen-header{
+    display: flex;
+    justify-content: center;
+   
+}
+.rs-hscreen-header .app-title {
+ width: 108px;
+ margin-top: 97px !important;
+}
+.bg-dog-image{
+    background-image: url("../Image/Group\ 377.png");
+    height: 210px;
+    background-size: cover;
+}
+.rs-gscreen , .rs-mm3d-gameheader ,  .icon-timer , .rs-mm3d-mainbutton ,.rs-mm3d-gamebuttonbar{
+    background-color: #0055A5;
+}
+.rs-mm3d-gameheader .rs-mm3d-timebtn .icon-timer ,.rs-mm3d-gameheader .rs-mm3d-movebtn .icon-magic ,.rs-mm3d {
+    background-color: #0055A5;
+}
+.rs-mm3d {
+    background-color: #0055A5;
+    background-image: none;
+}
+.rs-game-panel{
+    background-color: #fff !important;
+}
+.rs-mm3d-mainbutton{
+    color: #fff !important;
+}
+.timebtn-value , .movebtn-value{
+    background-color: #0055A5 !important;
+    color: #fff !important;
+}
+.menu-item{
+    color: #fff !important;
+    background-color: #0055A5 !important;
+    border-color: #0055A5 !important;
+}
+@media screen and (max-width: 650px) {
+.rs-hscreen{
+    height: 94%  !important;
+    margin-top: 20px !important;
+    width: 89% !important;
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+    background-color: white !important;
+}
+.menu-item :first-child{
+    margin-top: 50px !important;
+}
+.rs-hscreenmenu .menu-item {
+    margin-top: 13px !important;
+    margin-bottom: 13px !important;
+    transition: none !important;
+}
+
+.rs-hscreenmenu .menu-list {
+margin-top: 77px !important;
+}
+}
+.navbar-nav{
+    position: absolute !important;
+    top:  0px;
+    left: 0px;
+    right: 0px;
+ 
+    width: -webkit-fill-available !important;
+    text-align: center !important;
+    background-color: #ffffffde !important;
+
+}
+.close{
+
+    position: absolute !important;
+    right: 20px !important;
+    top: 2px !important;
+    font-size: 22px;
+    /* margin-top: -15px; */
+    font-size:25px;
+    font-weight:900;
+}
+.button-toogle{
+    padding: 0px !important;
+    border: 0px !important;
+    margin-top: -20px !important;
+}
+.navbar-toggler{
+    padding: 0px !important;
+    border: none !important;
+}
+.button-toogle{
+        background-color: #29292900 !important;
+}
+.navbar{
+    position: unset !important;
+   
+}
+.form-check-input:checked{
+    background-color: #05c54b !important;
+    border-color: #05c54b !important;
+}
+@media screen and (min-width: 700px) {
+    /* .cookies_show_hide{
+        display: none !important;
+    } */
+    /* .cookies-index
+    {
+        visibility: visible;
+    } */
+.app-info{
+    display: none  !important;
+}
+.perfect_poo_logo{
+    margin-top: 40px;
+}
+.main , .desktop-width {
+    /* height: 100vh; */
+    width: 450px;
+    position: absolute;
+    left: 30%;
+    right: 30%;
+    }
+    .navbar-nav{
+        display: none !important;
+    }
+}
+.rs-mm3d-levelbtn{
+    display: none !important;
+}
+.rs-mm3d-gameheader .rs-mm3d-movebtn span{
+    display: inline-block !important;
+}
+.rs-mm3d-helppanel .helppanel-content {
+padding-top: 70px !important;
+}
+.help-section h3 {
+    padding-bottom: 10px  !important;
+}
+.form-select{
+    width: auto !important;
+    margin: auto !important;
+}
+.error , #error_msg{
+    color: red;
+    font-size: 14px;
+}
+.error , #error_msg{
+    border-color:red;
+  }
+  
+.valid{
+border-color:green;
+}
+label#winneremail-error {
+    display: none !important;
+}
+label#firstname-error {
+    display: none !important;
+}
+label#inputAddress-error {
+    display: none !important;
+}
+label#YourCity-error , #loseremail-error , #newsletter_checkbox-error , #privacy_checkbox-error{
+    display: none !important;
+}
+label#inputZip-error , #checkbox_rules-error , #checkbox_privacy-error , #rules_checkbox-error{
+    display: none !important;
+}
+.rs-mm3d-gameheader{
+        height: 16%  !important;
+        top: 0px  !important;
+}
+.sr-only{
+    display: none !important;
+}
+.btn-danger {
+    background-color: #ED1B35!important;
+    border-color: #ED1B35!important;
+}
+.btn-primary {
+    background-color: #0055A5!important;
+    border-color: #0055A5!important;
+}
+.text-primary {
+    color: #0055A5!important;
+}
+
+.perfect_poo_logo{
+    width: 65px;
+    height: auto;
+}  
+.text-primary , a {
+    color: #0055A5 !important;
+}
+.content-para{
+    word-wrap: break-word !important; 
+}
+.bi-list{
+    font-size: 3em !important;
+}
+.small-font{
+    font-size: 14px;
+    color: #3f3f3f;
+}
+.btn-w-250{
+    width: 250px;
+    border-radius: 20PX;
+}
+.btn {
+    height: 45px !important;
+    border-radius: 20px !important;
+}
+.btn-danger:disabled{
+   opacity: .8 !important;
+}
+.btn-ni {
+    border: none;
+    margin: 5px auto;
+    text-decoration: underline;
+    background: none;
+    font-size: 16px;
+    width: 100%;
+}
+/* .div-btm {
+    position: absolute;
+    bottom: 10px;
+} */
+.div-cntr {
+    position:absolute;
+    top: 40%;
+}
+.cookies_show_hide{
+    background-color: #000000 !important;
+    opacity: 0.8;
+    margin-top: 11px;
+    /* position: absolute; */
+    bottom: 0;
+}
+.cookies_show_hide-store{
+    position: absolute;
+    bottom: 0px;
+}
+.cookies_show_hide button.btn {
+    background: none!important;
+    border: solid 2px white!important;
+}
+.cookies_show_hide .text-primary {
+    color: white!important;
+}
+@media (min-width: 992px) {
+    .welcome-bg-image {
+        background-image: url("../Image/Hills-Image-GirlYorkie.png");
+        background-repeat: no-repeat;
+        background-position: 0% 9%;
+        width: 100%;
+        left: 0%;
+        right: 0%;
+        
+        max-width: 100%;
+      }
+    .welcome-bg-image-overlay{
+        max-width: 100%;
+      }
+      .bg-dog-image {
+        background-image: url(../Image/Group\ 377.png);
+        height: 350px;
+        left: 0%;
+        right: 0%
+    }
+    body{
+        text-align: justify;
+    }
+    .cookies_show_hide{
+        width: 100%;
+        position: fixed;
+    }
+  }
+  
+  @media (min-width: 768px) {
+      /* body{
+          text-align: justify;
+      } */
+    .welcome-bg-image {
+        background-image: url("../Image/Hills-Image-GirlYorkie.png");
+        background-repeat: no-repeat;
+       background-position: 70% 0%;
+        width: 100%;
+        left: 0%;
+        right: 0%;
+        
+      }
+    .welcome-bg-image-overlay{
+        max-width: 100%;
+       
+      }
+      .bg-dog-image {
+        background-image: url(../Image/Group\ 377.png);
+        height: 350px;
+        background-position: 45%;
+        left: 0%;
+        right: 0%
+    }
+    .cookies_show_hide{
+        max-width: 100%;
+        position: fixed;
+        
+    }
+  }
+  @media (min-width: 576px) {
+    .welcome-bg-image {
+    background-image: url('../Image/Hills-Image-GirlYorkie.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    background-position: 70% 10%;
+    left: 0%;
+        right: 0%;
+        
+  }
+  body{
+    text-align: justify;
+}
+.bg-dog-image {
+    background-image: url(../Image/Group\ 377.png);
+    height: 350px;
+    background-position: 45%;
+    left: 0%;
+    right: 0%
+}
+.cookies_show_hide{
+    width: 100%;
+    
+    
+}
+  .px2{
+    padding-top: 1.5rem !important;
+  }
+}

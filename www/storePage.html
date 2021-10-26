@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Store</title>
+  <!-- bootstrap css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Global Site Tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-V1QG4Q0BSX"></script>
+
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-V1QG4Q0BSX');
+  </script>
+
+</head>
+
+<body>
+
+
+  <div class="">
+    <div class="Section-1 bg-dog-image ">
+      <!-- <img src="Image/Group 370.png" class="dog-image"> -->
+      <nav class="navbar navbar-expand-lg border-0  navbar-light px-2 Section-1">
+        <img class="pt-3" src="Image/Hills_TransformingLives_Logo_CMYK_White TL_2019.png">
+        <button class="button-toogle bg-none pt-5 text-white" data-toggle="collapse"
+          data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent">
+          <span class="navbar-toggler text-white bg-none "><i class="bi bi-list fa-2x "></i></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto text-white">
+            <li class="close">
+              <i class="bi bi-x text-dark fa-3x"></i>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link pb-0 text-decoration-none">
+                <span data-lang="GAMES_RULES" id="menu_game_rules">Game Rules </span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link py-0 text-decoration-none">
+                <span data-lang="PRIVACY_POLICY" id="Privacy">Privacy Policy </span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link py-0 text-decoration-none">
+                <span data-lang="COOKIES_POLICY" id="cookies"> Cookies Policy</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pt-0 text-decoration-none">
+                <span class="text-primary" data-lang="CONTACT" id="contact_menu">Contact </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class=" container Section-2  pb-5 pt-4 px-4">
+      <h1 class="text-primary text-center pb-2"><span data-lang="WELL_DONE"></span></h1>
+      <p class="text-center"> <span data-lang="STORE_PARA"> </span>
+      </p>
+      <div id="storepage">
+
+        <div class="form-check">
+          <label class="form-check-label" id="new" for="flexRadioDefault4">
+	   <input class="form-check-input" type="radio" name="flexRadioDefault">
+            Tom&Co
+          </label>
+        </div>
+
+      </div>
+      <div class="Section-3 pt-3 text-center">
+        <button type="button" id="getRedirectUrl" name="sendNewSms" class="btn btn-primary   px-5"><a
+            class="text-white text-decoration-none"> <span data-lang="Next">  </span></a></button>
+      </div>
+    </div>
+    <div class="container cookies_show_hide   ">
+      <div class="row">
+        <p class="my-0 px-2 py-2 text-primary">
+          <span data-lang="COOKIES_POLICY_WELCOME" id="cookies_below"> </span>
+        </p>
+        <br>
+        <button type="button" class="btn btn-primary w-50 justify-content-center mx-auto  mb-2 border-radius-16"
+          id="cookies_accept">
+          <span class="text-white text-decoration-none" data-lang="ACCEPT">Accept</span></button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+  crossorigin="anonymous"></script>
+  <!-- <script>
+    var checker = document.getElementById('');
+    var sendbtn = document.getElementById('getRedirectUrl');
+    // when unchecked or checked, run the function
+    checker.onchange = function () {
+      if (this.checked) {
+        sendbtn.disabled = false;
+      } else {
+        sendbtn.disabled = true;
+      }
+    }
+  </script> -->
+  <script>
+    function enable_btn() {
+      $('#getRedirectUrl').prop('disabled', false);
+    }
+    $("#getRedirectUrl").on("click", function () {
+      console.log("hurray");
+
+    });
+
+  </script>
+  <script type="module">
+    import fetchApi from "./js/services/fetch.js"
+    import lng from "./js/services/language.js"
+    const lgInstance = new lng();
+    const api = new fetchApi();
+    const callserver = async () => {
+      const res = await api.getAllShop()
+      const shopArr = res.data
+      console.log(shopArr)
+      var a = document.getElementById("new")
+      var super_array = [];
+      console.log(res.data.length)
+      for (let i = 0; i < res.data.length; i++) {
+        '<input  type="radio" >'
+        var b = `<input class="form-check-input" onclick="enable_btn()" type="radio" name="flexRadioDefault" value="${res.data[i]._id}" id=${res.data[i].name}>` + res.data[i].name + "<br>";
+        super_array.push(b);
+        console.log(res.data[i].name);
+      }
+      a.innerHTML = super_array.join(" ")
+      return res
+    }
+    callserver();
+
+
+    $(document).ready(function () {
+      $('#getRedirectUrl').prop('disabled', true);
+      //     var isChecked = $('.form-check-input').prop('checked') ? true : false;
+      // alert(isChecked);
+      // return false;
+    
+     
+      $("span[data-lang]").each((index, elm) => {
+        const LANG_CODE = $(elm).data('lang');
+        const content = lgInstance.trans(`${LANG_CODE}`);
+        $(elm).text(content);
+      })
+    })
+
+  // if ($('.form-check-input').checked == true) {
+  //     sendbtn.disabled = false;
+  // }
+  $( document ).ready(function(){
+      var movesCountData = localStorage.getItem('moves count');
+      if (movesCountData <= 20) {
+        localStorage.setItem("iswinner", true)
+        // window.location.href = "Bravowinandpet.html";
+      }
+      if (movesCountData > 20) {
+        localStorage.setItem("iswinner", false)
+        // window.location.href = "lose.html";
+      }
+})
+  </script>
+
+  <script type="module">
+
+    import fetchApi from "./js/services/fetch.js"
+    $("#getRedirectUrl").on("click", function () {
+      let shopIdValue = $('input[name="flexRadioDefault"]:checked').attr('value');
+      console.log(shopIdValue)
+      localStorage.setItem('shopId', shopIdValue);
+      const api = new fetchApi();
+    })
+  </script>
+  <script type="module">
+    import fetchApi from "./js/services/fetch.js"
+
+
+    const api = new fetchApi();
+
+    $("#getRedirectUrl").on("click", async function () {
+      const res = await api.UpdateUser()
+
+      console.log("RRRRRRRRRR", res)
+
+      const winnerdata = await api.GetPrizeRewards();
+      console.log(winnerdata)
+            console.log('Winnnndata is', winnerdata)
+      var movesCountData = localStorage.getItem('moves count');
+      if (movesCountData <= 20) {
+        if(!winnerdata.message) {
+
+              window.location.href = "Bravowinandpet.html"
+         }
+          else {
+            window.location.href = "loseandpet.html";
+         }
+      }
+      if (movesCountData > 20) {
+        window.location.href = "loseandpet.html";
+      }
+    });
+  </script>
+<script src ="js/main.js"></script>
+</body>
+</html>
